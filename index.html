@@ -103,7 +103,7 @@
 
   /* ---------- hero ---------- */
   header{padding:158px 0 30px}
-  .hero-grid{display:grid;grid-template-columns:1.55fr .85fr;gap:44px;align-items:stretch}
+  .hero-grid{display:grid;grid-template-columns:1.55fr .85fr;gap:44px;align-items:start}
   .badge{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line-strong);border-radius:999px;padding:7px 14px 7px 10px;font-size:13px;font-weight:600;color:var(--text-2);background:var(--surface)}
   .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent-soft);animation:pulse 2.2s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,214,163,.45)}70%{box-shadow:0 0 0 9px rgba(47,214,163,0)}100%{box-shadow:0 0 0 0 rgba(47,214,163,0)}}
@@ -144,7 +144,7 @@
   .fact-list div{display:flex;justify-content:space-between;gap:14px;font-size:14px}
   .fact-list dt{color:var(--text-3);font-weight:500}
   .fact-list dd{margin:0;font-weight:700;text-align:right}
-  .card-links{display:flex;gap:10px;margin-top:auto;padding-top:22px}
+  .card-links{display:flex;gap:10px;margin-top:20px}
   .card-links a{flex:1;display:inline-flex;justify-content:center;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14px;padding:11px 10px;border-radius:12px;border:1px solid var(--line-strong);transition:.2s}
   .card-links a svg{width:16px;height:16px}
   .card-links a:hover{border-color:var(--accent);color:var(--accent)}
@@ -632,7 +632,7 @@
       </div>
       <div class="p-side"><a class="gh-link" href="https://github.com/ubaidzirrar1/portfolio" target="_blank" rel="noopener">View on GitHub
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-    </article>
+    </article> <article class="project rv" data-cat="mobile"> <div class="p-num">/ 07</div> <div> <h3>TaskOrbit</h3> <p class="p-type">On-Demand Service Marketplace App</p> </div> </article>
   </div>
 </section>
 
@@ -1156,7 +1156,7 @@
         else if (reduced) { ghSection.classList.add('section-hidden'); }
         else { setTimeout(function(){ var anyGh=false; allProjects.forEach(function(c){ if (ghSection.contains(c) && !c.classList.contains('filter-out')) anyGh=true; }); if (!anyGh) ghSection.classList.add('section-hidden'); }, 330); }
       }
-      if (filterStatus) filterStatus.textContent = (f === 'all') ? 'Showing all 7 projects' : 'Showing ' + shown + ' of 7 projects';
+      if (filterStatus) filterStatus.textContent = (f === 'all') ? 'Showing all 10 projects' : 'Showing ' + shown + ' of 10 projects';
     });
   });
 
